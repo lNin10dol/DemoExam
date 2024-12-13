@@ -1,0 +1,30 @@
+﻿<Page x:Class="AutoServise.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoServise"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StartPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"></ColumnDefinition>
+            <ColumnDefinition Width="77*"></ColumnDefinition>
+            <ColumnDefinition Width="77*"></ColumnDefinition>
+            <ColumnDefinition Width="205*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"></RowDefinition>
+            <RowDefinition Height="43*"></RowDefinition>
+            <RowDefinition Height="390*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Button Content="Клиент"  HorizontalAlignment="Center"  Grid.Column="1" Grid.Row="1"  VerticalAlignment="Center" Height="20" Width="100" Click="Button_Click"/>
+        <Button Grid.Column="2" Content="Авто"  Grid.Row="1" VerticalAlignment="Center" Height="20" Click="Button_Click_1" Margin="27,0,27,0" />
+
+        <Frame x:Name="StartMenu" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"></Frame>
+    </Grid>
+</Page>

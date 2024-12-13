@@ -1,0 +1,35 @@
+﻿<Page x:Class="AutoServise.AddCar"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoServise"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddCar">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"></ColumnDefinition>
+            <ColumnDefinition Width="340*"></ColumnDefinition>
+            <ColumnDefinition Width="340*"></ColumnDefinition>
+            <ColumnDefinition Width="60*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"></RowDefinition>
+            <RowDefinition Height="150*"></RowDefinition>
+            <RowDefinition Height="150*"></RowDefinition>
+            <RowDefinition Height="150*"></RowDefinition>
+            <RowDefinition Height="20*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="1" TextWrapping="Wrap" Text="Марка" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="1" TextWrapping="Wrap" Text="Модель" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="2" TextWrapping="Wrap" Text="Цвет" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="2" TextWrapping="Wrap" Text="Номер клиента" VerticalAlignment="Top"/>
+        <ComboBox x:Name="id_clientSelect" Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Center" Width="120" />
+        <TextBox x:Name="CarBrend" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="CarModel" Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="CarColor" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <Button Grid.Column="2" Content="Button" HorizontalAlignment="Left" Margin="148,53,0,0" Grid.Row="3" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Page>
